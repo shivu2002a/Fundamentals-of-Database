@@ -39,7 +39,7 @@ Reading something that's not even committed yet </br>
 ![Dirty reads](../Assets/Dirty-reads-(182).png)
 ####  2. NON-REPEATABLE READS
 Inconsistent read </br>
-![Non-repeatable reads](../Aszets/Non-repeatable-read-(183).png)
+![Non-repeatable reads](../Assets/Non-repeatable-read-(183).png)
 ####  3. PHANTOM READS
 Not read before, read now </br>
 ![Phantom reads](../Assets/Phantom-reads-(184).png)
