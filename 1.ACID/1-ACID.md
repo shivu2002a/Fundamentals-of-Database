@@ -45,14 +45,14 @@ Not read before, read now </br>
 ![Phantom reads](../Assets/Phantom-reads-(184).png)
 ####  4. LOST UPDATES
 One update overwritten by another transaction, resulting in loss of update  </br>
-![Phantom reads](../Assets/lost-updates-(185).png)
+![Phantom reads](../Assets/Lost-updates-(185).png)
 #### ISOLATION LEVELS for inflight transaction </br>
 > **Read uncommitted:** No isolation,any change from outside is visible even if the're uncommitted </br>
 > **Read committed:** Each query in a transaction sees only committed changes by other transaction </br>
 > **Repeatale read:**  The transaction will make sure that when a query reads a row, that row will remain unchanged during the transaction. </br> 
 > **Snapshot:**  Each query in a transaction sees only changes committed up to the start of the transaction. It's like a snapshot version of the db at the moment. </br> 
 > **Serializable:**  Transactions are run as if they're serialized one after the other. </br>
-> ![Read phenomena vs Isolation level](../Assets\Read-phenomena-vs-Isolation-level-(186).png)
+> ![Read phenomena vs Isolation level](../Assets/Read-phenomena-vs-Isolation-level-(186).png)
 
 #### DB IMPL of ISOLATION</br>
 > Each db implements isolation differently. </br>
