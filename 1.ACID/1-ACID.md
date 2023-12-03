@@ -1,8 +1,10 @@
 ## TRANSACTIONS
 Collection of queries (one unit of work) </br>
-` Transaction BEGIN ` </br>
-`Transaction COMMIT` </br>
-`Transaction ROLLBACK` </br>
+```sql
+Transaction BEGIN 
+Transaction COMMIT
+Transaction ROLLBACK
+```
 PostgreSQL - Commits faster (lot of I/O) </br>
 SQL Server - Commits are slower for large query </br>
 Nature - Used to change or modify data. Perfectly normal to have read-only transactions. </br>
