@@ -7,19 +7,14 @@ import java.sql.Statement;
 import java.util.Random;
 
 public class Indexing {
-    // JDBC URL, username, and password of the MySQL server
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/";
-    private static final String JDBC_USER = "root";
-    private static final String TABLE_NAME = "dummydata";    
-    private static final String DATABASE_NAME = "fundamentals-of-database";
-
-    private static final String JDBC_PASSWORD = "localhost3306";
+    
+    private static final String TABLE_NAME = "dummydata";
 
     public static void main(String[] args) {
         Connection conn = null;
         try {
             // Establishing a connection to the MySQL database
-            conn = DriverManager.getConnection(JDBC_URL + DATABASE_NAME, JDBC_USER, JDBC_PASSWORD);
+            conn = DatabaseConnection.establishConnection();
             if (conn != null) {
                 System.out.println("Connected to the database!");
                 // Step 2: Insert 11 million dummy records
